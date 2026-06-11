@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch Shows Online, Watch Movies Online</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.main {
+    background-image: url("img/nettflix.jpg");
+    height: 80vh; 
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    position: relative;
+    z-index: 10;
+}
+
+nav img {
+    width: 114px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    z-index: 10;
+    gap: 10px;
+    padding: 0 29px;
+    text-align: center;
+}
+
+.hero > :first-child {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero  > span:nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero > span:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.button {
+    padding: 6px 12px;
+    color: white;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.08);
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.red-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.main input {
+    padding: 12px 100px 12px 14px;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 7px 14px;
+    cursor: pointer;
+}
+
+.line {
+    height: 8px;
+    background-color: rgb(65, 65, 65);
+}
+
+/* FIRST SECTION */
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    padding: 70px 0;
+     gap: 40px; 
+}
+
+.first div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.first div:first-child span:first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first div:first-child span:nth-child(2),
+.first div:first-child span:nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.secImg img {
+    width: 100%;
+    max-width: 450px;
+}
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    padding: 70px 0;
+    gap: 40px;
+}
+
+.second div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.second div:first-child span:first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.second div:first-child span:nth-child(2),
+.second div:first-child span:nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.secImg img {
+    width: 100%;
+    max-width: 450px;
+}
+
+.third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    padding: 70px 0;
+    gap: 40px;
+}
+
+.third div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.third div:first-child span:first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.third div:first-child span:nth-child(2),
+.third div:first-child span:nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.secImg img {
+    width: 100%;
+    max-width: 450px;
+}
+ .faq-box{
+    display:flex;
+    flex-direction: column;
+    background-color:rgba(248, 243, 243, 0.08);
+    color:white;
+    padding:2px;
+    max-width: 40vw;
+    margin:14px auto;
+    cursor: pointer;
+    font-size: 24px;
+    padding:24px;
+
+}
+.faq h2{
+    text-align: center;
+    color:white;
+}
+.faq-box:hover{
+    transition:all;
+    background-color: rgb(37,36,36);
+}
+.faq-box svg{
+    filter:invert(1);
+     
+}
+/* FOOTER */
+
+footer {
+    max-width: 80vw;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 60px 0;
+}
+
+footer .questions {
+    padding: 20px 0;
+    font-size: 16px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.netflix-india {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .first {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .first div:first-child,
+    .secImg {
+        width: 100%;
+    }
+
+    .hero > :first-child {
+        font-size: 32px;
+    }
+
+    .hero > :nth-child(2),
+    .hero > :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .main input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        max-width: 95vw;
+    }
+
+    .hero > :first-child {
+        font-size: 28px;
+    }
+}
+
+
+
+
+
+    </style>
+
+   
+    <link rel="stylesheet" href="styleee.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <nav>
+            <span>
+                <img width="53" src="img/logoo.svg" alt="Netflix Logo">
+            </span>
+
+            <div class="flex">
+                <button class="button">English</button>
+                <button class="btn btn-red-sm">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="box"></div>
+
+        <div class="hero">
+
+            <span>Enjoy big movies, hit series and more from ₹149.</span>
+
+            <span>Join today. Cancel anytime. Ready to watch?</span>
+
+            <span>Enter your email to create or restart your membership.</span>
+
+            <div class="buttons">
+                <input type="text" placeholder="Email Address">
+
+                <button class="btn red-btn">
+                    Get Started &gt;
+                </button>
+            </div>
+
+        </div>
+
+        <div class="line"></div>
+
+    </div>
+
+    <section class="first">
+
+        <div>
+         <span>Enjoy on your TV</span>
+
+            
+               <span> Watch on Smart TVs, PlayStation, Xbox, Apple TV </span>
+                <span>Blu-ray players and more.</span>
+            
+        </div>
+
+        <div class="secImg">
+            <img src="image.jpg" alt="TV Image">
+        </div>
+
+    </section>
+     <div class="line"></div>
+     <section class="second">
+
+        <div>
+         <span>Download your shows to watch online</span>
+
+            
+               <span> Sve your favourites easily and always have something to watch. </span>
+                
+            
+        </div>
+
+        <div class="secImg">
+            <img src="ph.png"TV Image">
+        </div>
+
+    </section>
+     <div class="line"></div>
+     <section class="third">
+
+        <div>
+         <span>Watch it </span>
+
+            
+               <span> Its gonna be super amazing </span>
+                
+            
+        </div>
+
+        <div class="secImg">
+            <img src="pho.png">
+        </div>
+
+    </section>
+     
+     <section class="faq">
+      <h2>Frequetly asked questions</h2>
+      <div class="faq-box">
+         <span>What is netlfix
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4V20M20 12H4" />
+</svg>
+</span>
+      </div>
+     </section>
+     
+    
+     <section class="faq">
+     
+      <div class="faq-box">
+         <span>How much does netflix cost?
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4V20M20 12H4" />
+</svg>
+</span>
+      </div>
+     </section>
+     </section>
+    
+     <section class="faq">
+      
+      <div class="faq-box">
+         <span>Wher can i watch?
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4V20M20 12H4" />
+</svg>
+</span>
+      </div>
+     </section>
+     </section>
+     
+     <section class="faq">
+      
+      <div class="faq-box">
+         <span>How do i cancel?
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 4V20M20 12H4" />
+</svg>
+</span>
+      </div>
+     </section>
+     </section>
+     
+     <section class="faq">
+    
+      <div class="faq-box">
+         <span>Is netflix ood for kids?
+         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="currentColor" fill="none" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="white">
+    <path d="M12 4V20M20 12H4" />
+</svg>
+</span>
+      </div>
+     </section>
+     <div class="line"></div>
+     <div class="faq-item"></div>
+     <footer>
+
+    <div class="questions">
+        Questions? Call 000-800-919-1694
+    </div>
+
+    <div class="footer">
+
+        <div class="footer-item">
+            <a href="#">FAQ</a>
+            <a href="#">Investor Relations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Speed Test</a>
+        </div>
+
+        <div class="footer-item">
+            <a href="#">Help Centre</a>
+            <a href="#">Jobs</a>
+            <a href="#">Cookie Preferences</a>
+            <a href="#">Legal Notices</a>
+        </div>
+
+        <div class="footer-item">
+            <a href="#">Account</a>
+            <a href="#">Ways to Watch</a>
+            <a href="#">Corporate Information</a>
+            <a href="#">Only on Netflix</a>
+        </div>
+
+        <div class="footer-item">
+            <a href="#">Media Centre</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+    </div>
+
+    <div class="netflix-india">
+        Netflix India
+    </div>
+
+</footer>
+</body>
+</html>
